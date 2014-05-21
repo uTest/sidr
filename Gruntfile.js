@@ -20,7 +20,7 @@ module.exports = function(grunt) {
       },
       pkg: {
         files: {
-          'package/jquery.<%= pkg.name %>.min.js': ['dist/jquery.<%= pkg.name %>.js']
+          'dist/jquery.<%= pkg.name %>.min.js': ['dist/jquery.<%= pkg.name %>.js']
         }
       }
     },
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
       prod: {
         options: {
           sassDir: 'src/scss',
-          cssDir: 'package/stylesheets',
+          cssDir: 'dist/stylesheets',
           environment: 'production'
         }
       }
